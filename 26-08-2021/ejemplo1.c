@@ -11,6 +11,9 @@ gcc -Wall ejemplo1.c -o ejemplo1.out
 
 #include <stdio.h>
 
+/* Constantes */
+#define TRUE 1
+#define FALSE 0
 
 /* Declaracion de funciones */
 int fibonacci(int n);
@@ -22,15 +25,40 @@ void tests(void);
 /* Funcion main */
 int main() {
     // Variables locales
+    int num_terminos;
+
 
 
     /* Codigo de la aplicacion */
+    printf("Bienvenido\n");
+    printf("Digite el numero de terminos a mostrar (-1 para terminar): ");
+    scanf("%d",&num_terminos);
+    while(num_terminos > -1) {
+        // Despliegue de los numeros de la serie
+        printf("Terminos:\n");
+        switch(num_terminos) {
+            case 1:
+                printf("%d\n", fibonacci(0));
+                break;
+            case 0:
+                printf("No se muestran terminos");
+                break;
+            default:
+                for(int i = 0; i < num_terminos; i++) {
+                    printf("%d\n", fibonacci(i));
+                }
+                break;
+            }
+        printf("Digite el numero de terminos a mostrar (-1 para terminar): ");
+        scanf("%d",&num_terminos);
+    }
+    printf("chao bambino\n");
 
     /* 
     Pruebas
      Se comenta cuando las pruebas dan
     */
-    tests();
+    // tests();
    
     return 0;
 }
@@ -42,8 +70,6 @@ void tests(void) {
     printf("%d\n",fibonacci(1));
     printf("%d\n",fibonacci(2));
     printf("%d\n",fibonacci(7));
-
-
 }
 
 int fibonacci(int n) {
