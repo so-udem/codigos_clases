@@ -158,12 +158,12 @@ Total KPL: 22.076923
 Escriba los kilometros usados (-1 para salir): 200
 Escriba los litros: 10
 KPL en este reabastecimiento: 20.000000
-Total KPL: 21.173913
+Total KPL: 42.076923
 
 Escriba los kilometros usados (-1 para salir): 120
 Escriba los litros: 5
 KPL en este reabastecimiento: 24.000000
-Total KPL: 21.678571
+Total KPL: 66.076923
 
 Escriba los kilometros usados (-1 para salir): -1
 ```
