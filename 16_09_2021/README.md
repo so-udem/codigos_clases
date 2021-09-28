@@ -10,10 +10,15 @@ Para comprender el ejemplo revise la teoria disponible en el enlace [Estructuras
 
 En el siguiente archivo se muestra como declarar una estructura. A continuación se muestran los archivos analizados en la clase:
 * [ejemplo1.c](ejemplo1.c)
-* [ejemplo2.c](ejemplo2.c) (**Nota**: Este es el ejemplo 1 pero mas completo)
- 
-**Instrucciones de compilación**
 
-```
-gcc -Wall ejemplo1.c -o ejemplo1.out
-```
+  ```
+  gcc -Wall ejemplo1.c -o ejemplo1.out
+  ```
+
+* [ejemplo2.c](ejemplo2.c) 
+ 
+  ```
+  gcc -Wall ejemplo2.c -o ejemplo2.out
+  ```
+
+  * **Nota**: Este es el ejemplo 1 pero mas completo
