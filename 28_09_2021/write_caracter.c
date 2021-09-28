@@ -19,7 +19,7 @@ int main() {
     ch = generarCaracter(); // Generacion de la letra
     putc(ch,outFile);
   }
-  putc('\0',outFile);
+  //putc('\0',outFile);
   fclose(outFile);
   exit(0);
 }
